@@ -1,0 +1,99 @@
+{
+    "LOGIN": {
+        "EMAILORUSERNAME" : "E-Mail or Username",
+        "PASSWORD" : "Password",
+        "REMEMBERME" : "Remember me",
+        "LOGINB" : "Login",
+        "NOACC" : "No account?",
+        "REGISTRATION" : "Registration"
+    },
+
+    "REGISTRATION": {
+        "EMAIL" : "E-Mail",
+        "USERNAME" : "Username",
+        "FIRSTNAME" : "First Name",
+        "LASTNAME" : "Last Name",
+        "PASSWORD" : "Password",
+        "PASSWORDAGAIN" : "Password again",
+        "REGISTRATIONB" : "Registration"
+    },
+    
+    "FILTER": {
+        "NEITHER" : "Neither",
+        "ALL" : "All",
+        "VEGAN" : "Vegan",
+        "VEGETARIAN" : "Vegetarian",
+        "LACTOSEFREE" : "Lactosefree",
+        "GLUTENFREE" : "Glutenfree",
+        "GLUTENANDLACTOSEFREE" : "Glutenfree and Lactosefree"
+    },
+
+    "ADDNEWRECIPE": {
+        "SHORTDS" : "Short description (min 50 character)",
+        "LONGDS" : "Long description (min 100 character)",
+        "NAME" : "Name",
+        "IMGLINK" : "Image link",
+        "RECIPETYPE" : "Recipe type",
+        "BACK" : "Back",
+        "ADD" : "Add"
+    },
+
+    "EDITNEWRECIPE": {
+        "SHORTDS" : "Short description (min 50 character)",
+        "LONGDS" : "Long description (min 100 character)",
+        "NAME" : "Name",
+        "IMGLINK" : "Image link",
+        "RECIPETYPE" : "Recipe type",
+        "BACK" : "Back",
+        "EDIT" : "Edit"
+    },
+
+    "HEADER": {
+        "MYRECIPES" : "My Recipes",
+        "ALLRECIPES" : "All Recipes",
+        "LOGIN" : "Login",
+        "REGISTRATION" : "Registration",
+        "LOGOUT" : "Log out"
+    },
+
+    "ORDER": {
+        "ALPHABETICAL" : "Alphabetical order",
+        "NON-ALPHABETICAL" : "Reversed alphabetical order"
+    },
+
+    "DELETERECIPE": {
+        "TITLE" : "Delete Recipe",
+        "QUESTION" : "Are you sure you want to delete this recipe?",
+        "CANCEL" : "Cancel",
+        "DELETE" : "Delete"
+    },
+
+    "RECIPES": {
+        "SELECT" : "Please select a recipe",
+        "PLEASELOGIN" : "Please log into your account to see your recipes!",
+        "PLEASEUPLOAD" : "Please upload some recipes here!",
+        "RECIPEDETAIL" : {
+            "DELETEBTN" : "Delete Recipe",
+            "EDITBTN" : "Edit Recipe",
+            "INGREDIENTS" : {
+                "ADD" : "Add New ingredient",
+                "TITLE" : "Ingredients",
+                "DELETE" : "Delete",
+                "PLEASEUPLOAD" : "Please upload some ingredients!"
+            } 
+        },
+        "RECIPELIST" : {
+            "NEWRECIPE" : "New recipe",
+            "NORECIPE" : "You do not have any recipes yet!"
+        }
+    },
+
+    "ALLRECIPES": {
+        "PLEASELOGIN" : "Please log into your account to see all the recipes!"
+    },
+
+    "SEARCH": {
+        "PLACEHOLDER" : "Search a recipe after it's name"
+    }
+
+}

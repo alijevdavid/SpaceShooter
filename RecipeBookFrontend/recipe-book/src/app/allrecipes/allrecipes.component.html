@@ -1,0 +1,10 @@
+<div class="row">
+    <div class="col-md-6">
+        <app-allrecipe-list *ngIf="userService.isLoggedIn()"></app-allrecipe-list>
+        <div [translate]="'ALLRECIPES.PLEASELOGIN'" *ngIf="!userService.isLoggedIn()"></div>
+    </div>
+    <div class="col-md-6">
+        <app-allrecipe-detail [selected] = "selected" *ngIf="selected; else infoText"></app-allrecipe-detail>
+        <ng-template #infoText [translate]="'RECIPES.SELECT'"></ng-template>
+    </div>
+</div>

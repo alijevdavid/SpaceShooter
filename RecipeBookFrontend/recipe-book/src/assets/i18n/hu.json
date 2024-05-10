@@ -1,0 +1,98 @@
+{
+    "LOGIN": {
+        "EMAILORUSERNAME" : "E-Mail vagy Felhasználónév",
+        "PASSWORD" : "Jelszó",
+        "REMEMBERME" : "Emlékezz rám",
+        "LOGINB" : "Bejelentkezés",
+        "NOACC" : "Nincs fiókja?",
+        "REGISTRATION" : "Regisztráció"
+    },
+
+    "REGISTRATION": {
+        "EMAIL" : "E-Mail",
+        "USERNAME" : "Felhasználónév",
+        "FIRSTNAME" : "Keresztnév",
+        "LASTNAME" : "Vezetéknév",
+        "PASSWORD" : "Jelszó",
+        "PASSWORDAGAIN" : "Jelszó újra",
+        "REGISTRATIONB" : "Regisztráció"
+    },
+    
+    "FILTER": {
+        "NEITHER" : "Egyik se",
+        "ALL" : "Összes",
+        "VEGAN" : "Vegán",
+        "VEGETARIAN" : "Vegetáriánus",
+        "LACTOSEFREE" : "Laktózmentes",
+        "GLUTENFREE" : "Gluténmentes",
+        "GLUTENANDLACTOSEFREE" : "Gluténmentes és Laktózmentes"
+    },
+
+    "ADDNEWRECIPE": {
+        "SHORTDS" : "Rövid leírás (legalább 50 karakter)",
+        "LONGDS" : "Hosszú leírás (legalább 100 karakter)",
+        "NAME" : "Név",
+        "IMGLINK" : "Kép link",
+        "RECIPETYPE" : "Recepttípus",
+        "BACK" : "Vissza",
+        "ADD" : "Hozzáadás"
+    },
+
+    "EDITNEWRECIPE": {
+        "SHORTDS" : "Rövid leírás (legalább 50 karakter)",
+        "LONGDS" : "Hosszú leírás (legalább 100 karakter)",
+        "NAME" : "Név",
+        "IMGLINK" : "Kép link",
+        "RECIPETYPE" : "Recepttípus",
+        "BACK" : "Vissza",
+        "EDIT" : "Szerkesztés"
+    },
+
+    "HEADER": {
+        "MYRECIPES" : "Saját receptek",
+        "ALLRECIPES" : "Összes recept",
+        "LOGIN" : "Bejelentkezés",
+        "REGISTRATION" : "Regisztráció",
+        "LOGOUT" : "Kijelentkezés"
+    },
+    "ORDER": {
+        "ALPHABETICAL" : "ABC-sorrend",
+        "NON-ALPHABETICAL" : "fordított ABC-sorrend"
+    },
+
+    "DELETERECIPE": {
+        "TITLE" : "Recept törlése",
+        "QUESTION" : "Biztosan ki akarja törölni ezt a receptet?",
+        "CANCEL" : "Visszavonás",
+        "DELETE" : "Törlés"
+    },
+
+    "RECIPES": {
+        "SELECT" : "Kérem válasszon egy receptet",
+        "PLEASELOGIN" : "Kérem jelentkezzen be a fiókjába, hogy lássa a receptjeit!",
+        "PLEASEUPLOAD" : "Ide töltse fel receptjeit!",
+        "RECIPEDETAIL" : {
+            "DELETEBTN" : "Recept törlése",
+            "EDITBTN" : "Recept módosítása",
+            "INGREDIENTS" : {
+                "ADD" : "Hozzávaló felvétele",
+                "TITLE" : "Hozzávalók",
+                "DELETE" : "Törlés",
+                "PLEASEUPLOAD" : "Kérem töltsön fel hozzávalókat!"
+            } 
+        },
+        "RECIPELIST" : {
+            "NEWRECIPE" : "Új recept",
+            "NORECIPE" : "Még nincsen egy receptje sem!"
+        }
+    },
+
+    "ALLRECIPES": {
+        "PLEASELOGIN" : "Kérem jelentkezzen be a fiókjába, hogy lássa az összes receptet kilistázva!"
+    },
+
+    "SEARCH": {
+        "PLACEHOLDER" : "Keress receptet név alapján"
+    }
+
+}

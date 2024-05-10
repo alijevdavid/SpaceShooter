@@ -1,0 +1,8 @@
+<a class="list-group-item clearfix" (click)="onSelected()" style="cursor: pointer;" >
+    <div class="pull-left">
+        <h4 class="list-group-item-primary" *ngIf="selectedLanguage == 'hu'">{{recipe.name}}</h4>
+        <h4 class="list-group-item-primary" *ngIf="selectedLanguage == 'en'">{{recipe.nameEn}}</h4>
+        <p class="list-group-item-info" *ngIf="selectedLanguage == 'hu'">{{recipe.shortDescription}}</p>
+        <p class="list-group-item-info" *ngIf="selectedLanguage == 'en'">{{recipe.shortDescriptionEn}}</p>
+    </div>
+</a>

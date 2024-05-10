@@ -1,0 +1,62 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<div *ngIf="errorMessage != ''">
+    <div class="alert alert-danger">
+        {{errorMessage}}
+    </div>
+</div>
+<div *ngIf="successMessage != ''">
+    <div class="alert alert-success">
+        {{successMessage}}
+    </div>
+</div>
+<div class="row">
+    <div class="col-6">
+        <img [src]="selected.imageLink" alt="favorite" class="img-responsive" style="max-height:300px">
+    </div>
+    <div class="col-6">
+        <div *ngIf="recipeService.isThereAnyFavorite">
+            <a (click)="uploadFavorite()">
+                <img class="favoriteImg" src="assets/favoriteFilled.png">
+            </a>
+        </div>
+        <div *ngIf="!recipeService.isThereAnyFavorite">
+            <a (click)="uploadFavorite()">
+                <img class="favoriteImg" src="assets/favorite.png">
+            </a>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12" *ngIf="selectedLanguage == 'hu'">
+        <h1>{{selected.name}}</h1>
+    </div>
+    <div class="col-xs-12" *ngIf="selectedLanguage == 'en'">
+        <h1>{{selected.nameEn}}</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12" *ngIf="selectedLanguage == 'hu'">
+        {{selected.longDescription}}
+    </div>
+    <div class="col-xs-12" *ngIf="selectedLanguage == 'en'">
+        {{selected.longDescriptionEn}}
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <h2 [translate]="'RECIPES.RECIPEDETAIL.INGREDIENTS.TITLE'"></h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+      <ul class="list-group">
+        <div *ngIf="selectedLanguage == 'hu'">
+            <li class="list-group-item" *ngFor="let ingredient of selected.ingredients">{{ingredient.amount}} {{ingredient.amountType}} {{ingredient.name}}</li>
+        </div>
+        <div *ngIf="selectedLanguage == 'en'">
+            <li class="list-group-item" *ngFor="let ingredient of selected.ingredients">{{ingredient.ingredientEn}}</li>
+        </div>
+      </ul>
+    </div>
+  </div>

@@ -1,0 +1,6 @@
+<form>
+    <select (click)="onOrderChanged()" [(ngModel)] = "order" class="form-control mt-2" name="Filter" id="selectOrder">
+        <option value="0" [translate]="'ORDER.ALPHABETICAL'"></option>
+        <option value="1" [translate]="'ORDER.NON-ALPHABETICAL'"></option>
+    </select>
+</form>

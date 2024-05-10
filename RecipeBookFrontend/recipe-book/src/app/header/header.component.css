@@ -1,0 +1,68 @@
+body main#primary {
+    background: #fff;
+    padding-top: 10px;
+  }
+  
+  main#primary .wrapper {
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  .flag {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+  }
+  
+  nav.navbar {
+    height: 60px;
+  }
+  
+  .navbar-nav>li {
+    margin-right: 30px;
+    margin-left: 0px;
+  }
+  
+  .navbar-brand{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  .helloMsg{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .navbar-brand::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  
+  }
+  
+  .navbar-brand:hover::after{
+    width: 100%;
+  }
+  
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #00A0C6;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  
+  .nav-item:hover{
+    color: orange;
+    transition: 0.5s;
+  }

@@ -1,0 +1,42 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light px-5 w-100">
+    <div class="collapse navbar-collapse d-flex" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="navbar-brand" [translate]="'HEADER.MYRECIPES'" routerLink="recipes"></a>
+            </li>
+            <li class="nav-item">
+                <a class="navbar-brand" [translate]="'HEADER.ALLRECIPES'" routerLink="allrecipes"></a>
+            </li>
+            <li class="nav-item" *ngIf="!userService.isLoggedIn()">
+                <a class="navbar-brand" [translate]="'HEADER.LOGIN'" routerLink="login"></a>
+            </li>
+            <li class="nav-item" *ngIf="!userService.isLoggedIn()">
+                <a class="navbar-brand" [translate]="'HEADER.REGISTRATION'" routerLink="registration"></a>
+            </li>
+            <li class="text-primary" *ngIf="userService.isLoggedIn()">
+                <a class = "navbar-brand"> Hello {{userService.user.firstName}}!</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav mb-2 mb-lg-0 float-right ml-auto">
+            <li class="nav-item" *ngIf="userService.isLoggedIn()">
+                <a (click)="switchLanguage('hu')" class="d-flex align-items-center">
+                    <div [translate]="'HEADER.LOGOUT'" class="nav-link" (click)="logout()"></div>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a (click)="switchLanguage('hu')" class="d-flex align-items-center">
+                    <img class="flag" src="/assets/hungary.png" alt="Magyar" style="margin-right: 5px;">
+                    <span class="nav-link">Magyar</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a (click)="switchLanguage('en')" class="d-flex align-items-center">
+                    <img class="flag me-2" src="/assets/united-kingdom.png" alt="English" style="margin-right: 5px;">
+                    <span class="nav-link">English</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>

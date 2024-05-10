@@ -1,0 +1,11 @@
+<form>
+    <select (click)="onCategoryChanged()" [(ngModel)] = "category" class="form-control mt-2" name="Filter" id="selectCategory">
+        <option value="Összes" [translate]="'FILTER.ALL'"></option>
+        <option value="EgyikSe" [translate]="'FILTER.NEITHER'"></option>
+        <option value="Vegán" [translate]="'FILTER.VEGAN'"></option>
+        <option value="Laktózmentes" [translate]="'FILTER.LACTOSEFREE'"></option>
+        <option value="Gluténmentes" [translate]="'FILTER.GLUTENFREE'"></option>
+        <option value="LaktózmentesÉsGluténmentes" [translate]="'FILTER.GLUTENANDLACTOSEFREE'"></option>
+        <option value="Vegetáriánus" [translate]="'FILTER.VEGETARIAN'"></option>
+    </select>
+</form>

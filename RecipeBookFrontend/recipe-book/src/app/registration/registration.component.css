@@ -1,0 +1,21 @@
+.darkbox{
+    background-color: rgba(0, 0, 0, 0.80);
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+    border-radius: 1em;
+}
+
+.registrationImg{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+small{
+    color: red;
+}
+
+input.ng-invalid.ng-touched{
+    border: red solid 1px;
+}
